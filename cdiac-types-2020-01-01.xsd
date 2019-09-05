@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright 2019 XBRL US Inc.
+
+-->
+
+<!-- Schema for numeric types -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:link="http://www.xbrl.org/2003/linkbase"  xmlns:cdiac-types="http://xbrl-us/cdiac-types/2020-01-01"  xmlns:xbrli="http://www.xbrl.org/2003/instance"  xmlns:xlink="http://www.w3.org/1999/xlink"  attributeFormDefault="unqualified" blockDefault="" elementFormDefault="qualified" finalDefault=""  targetNamespace="http://xbrl.us/cdiac-types/2020-01-01">
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="filingFirmRoleItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Borrower Counsel(Loan)(Not Obligor Counsel)"/>
+        <xs:enumeration value="Bond Counsel"/>
+        <xs:enumeration value="Issuer"/>
+        <xs:enumeration value="Financial Advisor"/>
+        <xs:enumeration value="Lender"/>
+        <xs:enumeration value="Lead Underwriter"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="countyItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Alameda"/>
+        <xs:enumeration value="Alpine"/>
+        <xs:enumeration value="Amador"/>
+        <xs:enumeration value="Butte"/>
+        <xs:enumeration value="Calaveras"/>
+        <xs:enumeration value="Colusa"/>
+        <xs:enumeration value="Contra Costa"/>
+        <xs:enumeration value="Del Norte"/>
+        <xs:enumeration value="El Dorado"/>
+        <xs:enumeration value="Fresno"/>
+        <xs:enumeration value="Glenn"/>
+        <xs:enumeration value="Humboldt"/>
+        <xs:enumeration value="Imperial"/>
+        <xs:enumeration value="Inyo"/>
+        <xs:enumeration value="Kern"/>
+        <xs:enumeration value="Kings"/>
+        <xs:enumeration value="Lake"/>
+        <xs:enumeration value="Lassen"/>
+        <xs:enumeration value="Los Angeles"/>
+        <xs:enumeration value="Madera"/>
+        <xs:enumeration value="Marin"/>
+        <xs:enumeration value="Mariposa"/>
+        <xs:enumeration value="Mendocino"/>
+        <xs:enumeration value="Merced"/>
+        <xs:enumeration value="Modoc"/>
+        <xs:enumeration value="Mono"/>
+        <xs:enumeration value="Monterey"/>        
+        <xs:enumeration value="Napa"/>
+        <xs:enumeration value="Nevada"/>
+        <xs:enumeration value="Orange"/>
+        <xs:enumeration value="Placer"/>
+        <xs:enumeration value="Plumas"/>
+        <xs:enumeration value="Riverside"/>
+        <xs:enumeration value="Sacramento"/>
+        <xs:enumeration value="San Benito"/>
+        <xs:enumeration value="San Bernardino"/>
+        <xs:enumeration value="San Diego"/>
+        <xs:enumeration value="San Francisco"/>
+        <xs:enumeration value="San Joaquin"/>
+        <xs:enumeration value="San Luis Obispo"/>
+        <xs:enumeration value="San Mateo"/>
+        <xs:enumeration value="Santa Barbara"/>
+        <xs:enumeration value="Santa Clara"/>
+        <xs:enumeration value="Santa Cruz"/>
+        <xs:enumeration value="Shasta"/>
+        <xs:enumeration value="Sierra"/>
+        <xs:enumeration value="Siskiyou"/>
+        <xs:enumeration value="Solano"/>
+        <xs:enumeration value="Sonoma"/>
+        <xs:enumeration value="Stanislaus"/>
+        <xs:enumeration value="Sutter"/>
+        <xs:enumeration value="Tehama"/>
+        <xs:enumeration value="Trinity"/>
+        <xs:enumeration value="Tulare"/>
+        <xs:enumeration value="Tuolumne"/>
+        <xs:enumeration value="Ventura"/>
+        <xs:enumeration value="Yolo"/>
+        <xs:enumeration value="Yuba"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="statuteCodeItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="California Educational Facilities Act"/>
+        <xs:enumeration value="California Health Care Facilities Financing Authority Act"/>
+        <xs:enumeration value="California Infrastructure and Economic Dev Bank"/>
+        <xs:enumeration value="California Pollution Control Financing Authority"/>
+        <xs:enumeration value="California School Finance Authority Act"/>
+        <xs:enumeration value="Charter Schools Act of 1992"/>
+        <xs:enumeration value="Education Code Section 15264-15288"/>
+        <xs:enumeration value="Education Code Section 15300-15425"/>
+        <xs:enumeration value="Education Code Sections 15100 thru 15262"/>
+        <xs:enumeration value="General Obligation/Refunding General Obligation Bond Law"/>
+        <xs:enumeration value="Government Code Section 16720-16727"/>
+        <xs:enumeration value="Government Code Section 5450 (Public Bonds and Obligations)"/>
+        <xs:enumeration value="Hospital Districts"/>
+        <xs:enumeration value="Housing and Home Finance"/>
+        <xs:enumeration value="Housing Authorities Law"/>
+        <xs:enumeration value="Improvement Act of 1911"/>
+        <xs:enumeration value="Improvement Act of 1913"/>
+        <xs:enumeration value="Improvement Bond Act of 1915"/>
+        <xs:enumeration value="Installment Sales Agreements/Lease Purchase, Non-profit COPs"/>
+        <xs:enumeration value="Irrigation District Warrants"/>
+        <xs:enumeration value="Joint Exercise of Powers Law"/>
+        <xs:enumeration value="Landscaping and Lighting Act of 1972"/>
+        <xs:enumeration value="Los Angeles County Transportation Commission Revenue Bond Act"/>
+        <xs:enumeration value="Mark-Roos Local Bond Pooling Act – Rate Reduction Bonds"/>
+        <xs:enumeration value="Mark-Roos Local Bond Pooling Act of 1985"/>
+        <xs:enumeration value="Mark-Roos Community Facilities Act of 1982"/>
+        <xs:enumeration value="None"/>
+        <xs:enumeration value="Other"/>
+        <xs:enumeration value="Parking District Law of 1951"/>
+        <xs:enumeration value="Parking Law of 1949"/>
+        <xs:enumeration value="Pedestrian Mall Law of 1960"/>
+        <xs:enumeration value="Property Assessed Clean Energy (PACE) Program"/>
+        <xs:enumeration value="Public Utilities Code"/>
+        <xs:enumeration value="Redevelopment Law "/>
+        <xs:enumeration value="Refunding Act of 1984 for 1915 Improvement Act Bonds"/>
+        <xs:enumeration value="Refunding Bond Law – Local Agencies"/>
+        <xs:enumeration value="Revenue Bond Law of 1941"/>
+        <xs:enumeration value="San Diego County Authority Airport Act"/>
+        <xs:enumeration value="Section 9 of Article IX of Constitution of the State of CA"/>
+        <xs:enumeration value="State of Calif General Obligation Bonds – Commercial Paper"/>
+        <xs:enumeration value="Street Opening Act of 1903"/>
+        <xs:enumeration value="Temporary Borrowing"/>
+        <xs:enumeration value="Vehicle Parking District Law of 1943"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="nonUSCurrencyItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Yes"/>
+        <xs:enumeration value="No"/>
+        <xs:enumeration value="Unknown"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="section88559iComplianceItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Yes"/>
+        <xs:enumeration value="No"/>
+        <xs:enumeration value="Not applicable"/>
+      </restriction>
+    </simpleContent>
+  </complexType>    
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="notesItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Bond Anticipation (BAN)"/>
+        <xs:enumeration value="Grant Anticipation (GAN)"/>
+        <xs:enumeration value="Loan from bank or other institution (LOAN)"/>
+        <xs:enumeration value="Other Note (OTHN)"/>
+        <xs:enumeration value="Revenue Anticipation (RAN)"/>
+        <xs:enumeration value="Tax Allocation (TALN)"/>
+        <xs:enumeration value="Tax and Revenue Anticipation (TRAN)"/>
+        <xs:enumeration value="Marks-Roos Authority Loan (MKRL)"/>
+        <xs:enumeration value="Commercial Paper (CP)"/>
+        <xs:enumeration value="Conduit Revenue Note (Private Obligor)(CRN)"/>
+        <xs:enumeration value="Certificates of Participation (COPL)"/>
+        <xs:enumeration value="Capital Lease (CL)"/>
+        <xs:enumeration value="State Agency Loan (STAL)"/>
+        <xs:enumeration value="Other (OTH)"/>
+       </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="bondItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Conduit Revenue (CRB)"/>
+        <xs:enumeration value="General Obligation (GOB)"/>
+        <xs:enumeration value="Limited Tax Obligation (LTOB)"/>
+        <xs:enumeration value="Pension Obligation (POB)"/>
+        <xs:enumeration value="Rate Reduction (GC 6588.7)(RRB)"/>
+        <xs:enumeration value="Revenue (RB)"/>
+        <xs:enumeration value="Revenue (Public Enterprise)(PERB)"/>
+        <xs:enumeration value="Sales Tax Revenue (STRB)"/>
+        <xs:enumeration value="Special Assessment (SAB)"/>
+        <xs:enumeration value="Tax Allocation (TAB)"/>
+        <xs:enumeration value="Other Bond (OTHB)"/>
+       </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="saleItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Negotiated"/>
+        <xs:enumeration value="Competitive"/>
+       </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="maturityScheduleLocationItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Attached"/>
+        <xs:enumeration value="Included in Official Statement"/>
+       </restriction>
+    </simpleContent>
+    </complexType>
+    <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="officialStatementItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Enclosed"/>
+        <xs:enumeration value="None prepared"/>
+       </restriction>
+    </simpleContent>
+    </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="maturityStructureItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Serial (S)"/>
+        <xs:enumeration value="Term (T)"/>
+        <xs:enumeration value="Serial and term bonds (B)"/>
+       </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="validationItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Yes"/>
+        <xs:enumeration value="No"/>
+        <xs:enumeration value="Unknown"/>
+      </restriction>
+    </simpleContent>
+      </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="insuredOrGuaranteedItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="No"/>
+        <xs:enumeration value="Bond Insurance (I)"/>
+        <xs:enumeration value="Letter of Credit (L)"/>
+        <xs:enumeration value="State Intercept Program (T)"/>
+        <xs:enumeration value="Other"/>
+     </restriction>
+    </simpleContent>
+  </complexType>  
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="ratingAgencyItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Standard and Poors"/>
+        <xs:enumeration value="Fitch"/>
+        <xs:enumeration value="Moody's"/>
+        <xs:enumeration value="Other"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" abstract="false" mixed="false" name="principalBalanceStatusItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <xs:enumeration value="Not retired"/>
+        <xs:enumeration value="Repaid"/>
+        <xs:enumeration value="Redeemed"/>
+        <xs:enumeration value="Matured"/>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  </xs:schema>
